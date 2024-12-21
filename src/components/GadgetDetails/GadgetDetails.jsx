@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import heartimg from "../../assets/heart.png";
 import { GadgetContext } from "../Providers/GadgetProvider";
+import { toast } from "react-toastify";
 const GadgetDetails = () => {
   const { wishlist, setWishlist, cart, setCart } = useContext(GadgetContext);
   const { gadgetId } = useParams();
@@ -22,11 +23,17 @@ const GadgetDetails = () => {
   const handleWishlist = () => {
     if (!wishlist.find((wishItem) => wishItem.product_id === product_id)) {
       setWishlist((prev) => [...prev, gadgetData]);
+      toast("The item Successfully added to the WishList!");
+    } else {
+      toast("Item already added to the wishList");
     }
   };
   const handleCart = () => {
     if (!cart.find((cartItem) => cartItem.product_id === product_id)) {
       setCart((prev) => [...prev, gadgetData]);
+      toast("The item Successfully added to the Cart!");
+    } else {
+      toast("Item already added to the Cart");
     }
   };
   const stars = [];

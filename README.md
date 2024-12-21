@@ -1,8 +1,42 @@
-# React + Vite
+# Gadget Store ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Website Link**: [Click Here to Visit](https://your-live-website-link.com)  
+**Requirement Document Link**: [Click Here to View](https://your-requirement-doc-link.com)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 Project Description
+Gadget Store is an e-commerce platform where users can explore and purchase the latest gadgets. The site features a user-friendly interface with dynamic filtering, wishlist, and cart functionalities to enhance the shopping experience.
+
+---
+
+## 🛠️ React Fundamentals Used
+1. **Components**: Modular and reusable components for easy maintenance.
+2. **Props**: Passing data from parent to child components to enable dynamic rendering.
+3. **State Management**: Used `useState` and `useContext` hooks to manage application state.
+4. **Lifecycle Methods**: `useEffect` for handling side effects like fetching data.
+5. **Event Handling**: Managed user interactions like button clicks for adding items to cart or wishlist.
+6. **Conditional Rendering**: Displaying content dynamically based on application state.
+
+---
+
+## 🗃️ Data Handling & Management
+- **Context API**:
+  - Centralized management of cart and wishlist states.
+  - Ensures global access to shared data without prop drilling.
+
+---
+
+## 🌟 Key Features
+1. **Dynamic Product Filtering**:
+   - Filter products by categories like Computers, Phones, and Smart Watches.
+2. **Add to Cart and Wishlist**:
+   - Add items to cart and wishlist with buttons that disable after use.
+3. **Sort by Price**:
+   - A "Sort by Price" button in the Cart tab that arranges items in descending order of price.
+4. **Total Price Calculation**:
+   - Displays the total price of items in the cart dynamically.
+5. **Responsive Design**:
+   - Tailwind CSS and DaisyUI ensure the platform looks great on all devices.
+
+---
