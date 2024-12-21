@@ -1,0 +1,112 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Laptop Pro 15",
+    "product_image": "https://i.ibb.co.com/vVjWkp5/white-flowers-vase-laptop-alarm-clock-notebooks-against-wooden-backdrop-23-2147979124.jpg",
+    "category": "Computers",
+    "price": 1200,
+    "description": "A high-performance laptop with a 15-inch display.",
+    "Specification": ["16GB RAM", "1TB SSD", "Intel i7"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "Gaming PC Ultra",
+    "product_image": "https://i.ibb.co.com/hHr0B6Y/high-angle-gaming-setup-indoors-23-2149829123.jpg",
+    "category": "Computers",
+    "price": 2000,
+    "description": "A powerful gaming PC for the ultimate gaming experience.",
+    "Specification": ["32GB RAM", "2TB SSD", "RTX 4090"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 3,
+    "product_title": "All-in-One Desktop",
+    "product_image": "https://i.ibb.co.com/sKcySMf/workspace-with-blank-computer-screen-autumn-decoration-workspace-with-computer-58797-1195.jpg",
+    "category": "Computers",
+    "price": 800,
+    "description": "A sleek all-in-one desktop solution for your workspace.",
+    "Specification": ["8GB RAM", "512GB SSD", "Intel i5"],
+    "availability": false,
+    "rating": 4.3
+  },
+  {
+    "product_id": 4,
+    "product_title": "Chromebook Plus",
+    "product_image": "https://i.ibb.co.com/ChbBVjN/halfclosed-laptop-wooden-table-screen-glows-with-colors-169016-33669.jpg",
+    "category": "Computers",
+    "price": 400,
+    "description": "A lightweight and efficient Chromebook for everyday use.",
+    "Specification": ["4GB RAM", "64GB SSD", "Intel Celeron"],
+    "availability": true,
+    "rating": 4.0
+  },
+  {
+    "product_id": 5,
+    "product_title": "Workstation Elite",
+    "product_image": "https://img.freepik.com/premium-photo/modern-workplace-office-work-place-designer-minimal-desktop-area-productive-work-dismissal-concept_77829-3394.jpg?ga=GA1.1.1210059178.1733654577&semt=ais_hybrid",
+    "category": "Computers",
+    "price": 2500,
+    "description": "An elite workstation for professional-level tasks.",
+    "Specification": ["64GB RAM", "4TB SSD", "Xeon Processor"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 6,
+    "product_title": "Mini Desktop PC",
+    "product_image": "https://i.ibb.co.com/LrR8WxN/modern-computer-monitor-with-black-screen-system-unit-keyboard-mouse-white-background-495423-41040.jpg",
+    "category": "Computers",
+    "price": 600,
+    "description": "A compact desktop PC for small spaces.",
+    "Specification": ["8GB RAM", "256GB SSD", "Intel i3"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 7,
+    "product_title": "Smartphone Max",
+    "product_image": "https://i.ibb.co.com/WfbQH0s/realistic-cellphone-different-perspectives-23-2148790732.jpg",
+    "category": "Phones",
+    "price": 999,
+    "description": "A top-tier smartphone with advanced features.",
+    "Specification": ["6.7-inch OLED", "128GB Storage", "5G Support"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 8,
+    "product_title": "Budget Phone X",
+    "product_image": "https://i.ibb.co.com/cNrGxGx/business-investment-growth-with-smartphone-white-screen-coin-background-3d-rendering-530396-68.jpg",
+    "category": "Phones",
+    "price": 300,
+    "description": "An affordable phone with reliable performance.",
+    "Specification": ["5.5-inch LCD", "64GB Storage", "4G Support"],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": 9,
+    "product_title": "Smart Watch Sport",
+    "product_image": "https://i.ibb.co.com/1MQnF4g/fitness-trackers-concept-23-2148529803.jpg",
+    "category": "Smart Watches",
+    "price": 250,
+    "description": "A durable smartwatch for fitness enthusiasts.",
+    "Specification": ["Heart Rate Monitor", "GPS", "Water Resistant"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 10,
+    "product_title": "Luxury Smart Watch",
+    "product_image": "https://i.ibb.co.com/K9PVtLr/3d-smartwatches-set-isolated-white-background-107791-29222.jpg",
+    "category": "Smart Watches",
+    "price": 500,
+    "description": "A premium smartwatch with elegant design.",
+    "Specification": ["ECG", "OLED Display", "Sapphire Glass"],
+    "availability": true,
+    "rating": 4.9
+  }
+]
