@@ -21,6 +21,9 @@ const GadgetDetails = () => {
     rating,
   } = gadgetData;
   const handleWishlist = () => {
+    const button = document.getElementById('btn-heart');
+    button.classList.add('bg-gray-200', 'text-gray-400', 'cursor-not-allowed');
+
     if (!wishlist.find((wishItem) => wishItem.product_id === product_id)) {
       setWishlist((prev) => [...prev, gadgetData]);
       toast("The item Successfully added to the WishList!");
@@ -106,7 +109,7 @@ const GadgetDetails = () => {
               </svg>
             </button>
             <button
-              onClick={handleWishlist}
+              onClick={handleWishlist} id="btn-heart"
               className="border-2 border-gray-300 p-3 rounded-full"
             >
               <img className="w-4" src={heartimg} alt="" />

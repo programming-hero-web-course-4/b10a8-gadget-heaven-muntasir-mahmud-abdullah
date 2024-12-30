@@ -1,19 +1,34 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { GadgetContext } from "../Providers/GadgetProvider";
 import Item from "./item";
+import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const { cart } = useContext(GadgetContext);
+  const navigate = useNavigate();
+  const { cart,setCart } = useContext(GadgetContext);
   const [newcart, setNewcart] = useState(cart);
+  const [sum, setSum] = useState(0);
+
   // console.log(cart);
-  let sum = 0;
-  for (const i of cart) {
-    sum = i.price + sum;
-  }
+  useEffect(() => {
+    let total = 0;
+    for (const i of cart) {
+      total = i.price + total;
+    }
+    setSum(total);
+  }, []);
   const sortByPrice = () => {
     const sortedCart = [...newcart].sort((a, b) => b.price - a.price);
     setNewcart(sortedCart);
   };
+
+  const handlePurchase = () => {
+    setNewcart([]);
+    setSum(0);
+    setCart([]);
+    document.getElementById("my_modal_4").showModal();
+  };
+
   return (
     <div className="my-10">
       <div className="flex justify-between">
@@ -26,6 +41,33 @@ const Cart = () => {
           >
             Sort by price
           </button>
+          {/* You can open the modal using document.getElementById('ID').showModal() method */}
+          <button
+            className={` ${
+              !sum
+                ? "bg-[#9538e269] border-[#9538E2] py-3 px-10 rounded-full text-xl text-[#9538E2] font-semibold cursor-not-allowed"
+                : "border-2 border-[#9538E2] py-3 px-10 rounded-full text-xl text-[#9538E2] font-semibold hover:bg-[#9538e269]"
+            }`}
+            onClick={handlePurchase}
+            disabled={sum <= 0}
+          >
+            {" "}
+            Purchase
+          </button>
+          <dialog id="my_modal_4" className="modal">
+            <div className="modal-box w-11/12 max-w-5xl">
+              <h3 className="font-bold text-lg">Congratulation!</h3>
+              <p className="py-4">Sucessfully Purchased</p>
+              <div className="modal-action">
+                <form method="dialog">
+                  {/* if there is a button, it will close the modal */}
+            <Link to='/'>                  <button className="btn">
+                    Close
+                  </button></Link>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
 
